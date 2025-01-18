@@ -38,8 +38,8 @@ O arquivo `/var/log/auth.log` registra todas as tentativas de login.
   `/etc/systemd/system/monitor-login.service`
 
   # Ative e inicie o serviço:
-  sudo systemctl daemon-reload
-  sudo systemctl enable monitor-login.service
+  sudo systemctl daemon-reload 
+  sudo systemctl enable monitor-login.service 
   sudo systemctl start monitor-login.service
 
 ---
@@ -71,3 +71,8 @@ O arquivo `/var/log/auth.log` registra todas as tentativas de login.
 
 ## Observação
   Testado e funcionando no ubuntu Jammy 22.04
+
+## Não esqueça de instalar o pacote:
+  apt-get install inotify-tools
+
+  ---

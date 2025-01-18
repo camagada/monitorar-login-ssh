@@ -16,9 +16,8 @@ https://api.telegram.org/bot<SEU_BOT_TOKEN>/getUpdates
 # Nesse arquivo altere as variaveis ID do BOT e ID do Chat!
   send_sms_telegram.sh
 
-
   # Torne-o executável:
-  sudo chmod +x /usr/local/bin/send_telegram_message.sh
+  sudo chmod +x /usr/local/bin/send_sms_telegram.sh.sh
 
 ---
 

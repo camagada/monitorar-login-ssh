@@ -1,6 +1,22 @@
 # Alerta de Login via Telegram no Ubuntu
 
-## Etapas Passo a Passo
+## Etapa para fazer a instalação automaticamente
+  baixe o install_monitoramento.sh
+  
+  torne o arquivo executavel:
+  chmod +x install_monitoramento.sh
+
+  execute o script:
+  ./install_monitoramento.sh
+
+  O script irá configurar tudo conforme solicitado, incluindo a criação dos arquivos, ajuste de permissões e ativação do serviço. 
+  Você precisará apenas de fornecer:
+    o Código ID do Bot
+    o ID do chat do Telegram
+    O nome do Servidor.
+
+
+## Etapas Passo a Passo para implementar manualmente
 
 *Todos os arquivos necessários estão disponíveis no repositório!
 
@@ -73,5 +89,6 @@ O arquivo `/var/log/auth.log` registra todas as tentativas de login.
 
 ## Não esqueça de instalar o pacote:
   apt-get install inotify-tools
-
+  apt install rsyslog 
   ---
+

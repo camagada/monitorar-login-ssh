@@ -1,9 +1,14 @@
 [Unit]
 Description=Monitor login attempts and send alert to Telegram
+After=network.target
 
 [Service]
 ExecStart=/usr/local/bin/monitor_login.sh
-Restart=always
+Restart=on-failure
+RestartSec=5
+User=root
+StandardOutput=journal
+StandardError=journal
 
 [Install]
 WantedBy=multi-user.target
